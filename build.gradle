@@ -1,0 +1,33 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+apply plugin: 'maven'
+apply plugin: 'java'
+apply plugin: 'scala'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
+    mavenLocal()
+}
+
+dependencies {
+    compile 'org.scala-lang:scala-library:2.11.8'
+    compile 'com.sun.jersey:jersey-client:1.17.1'
+    compile 'com.sun.jersey:jersey-core:1.17.1'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.1.4'
+    compile 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.1.4'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.1'
+}
+
+//noinspection GroovyUnusedAssignment
+mainClassName = "com.tzachz.prgraph.GitHubPRGraph"
