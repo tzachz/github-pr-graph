@@ -7,7 +7,7 @@ Generates a DOT file graphing open PRs and their relationships - especially usef
  1. Make sure you have Java8 installed
  2. Have your GitHub user+password ready, or create and save an [access token](https://github.com/settings/tokens) (recommended!)
  3. Download and extract the packaged [github-pr-graph.zip](https://github.com/tzachz/github-pr-graph/raw/master/github-pr-graph.zip), 
- 4. Call the `github-pr-grap` script under `bin` in the extracted folder:
+ 4. Call the `github-pr-graph` script under `bin` in the extracted folder:
 
 ```bash
 # Usage:
