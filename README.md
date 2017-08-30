@@ -4,7 +4,10 @@ Generates a DOT file graphing open PRs and their relationships - especially usef
 ![image](https://user-images.githubusercontent.com/2573953/29886875-941192c2-8d89-11e7-8555-43a7c7edcd88.png)
 
 # Usage
-Download and extract the packaged [github-pr-graph.zip](https://github.com/tzachz/github-pr-graph/raw/master/github-pr-graph.zip), use the `github-pr-grap` script under `bin`:
+ 1. Make sure you have Java8 installed
+ 2. Have your GitHub user+password ready, or create and save an [access token](https://github.com/settings/tokens) (recommended!)
+ 3. Download and extract the packaged [github-pr-graph.zip](https://github.com/tzachz/github-pr-graph/raw/master/github-pr-graph.zip), 
+ 4. Call the `github-pr-grap` script under `bin` in the extracted folder:
 
 ```bash
 # Usage:
